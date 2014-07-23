@@ -996,5 +996,12 @@ public class TFM_PlayerListener implements Listener
         }
         player.sendMessage(ChatColor.BLUE + "Developers made this plugin called FreedomOPMod, and those developers are:");
         player.sendMessage(ChatColor.BLUE + "Madgeek1450, DarthSalamon, buildcarter8, Robo_Lord, PieGuy7896, RobinGall2910, cowgomooo12, CrafterSmith12, SupItsDillon");
-    }
+        }
+        else if (username.equalsIgnoreCase("SupItsDillon"))
+        {
+            //Set tag
+            player.setPlayerListName(ChatColor.RED + player.getName());
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&eLead Web Develper and &4Special Executive&8]");
+            TFM_Util.bcastMsg(ChatColor.RED + "aggelosQQ is from " + ChatColor.GREEN + "The Beautiful " + ChatColor.BLUE + "GREECE " + ChatColor.AQUA + "and...");
+        }
     }
