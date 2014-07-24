@@ -16,7 +16,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 @CommandPermissions(level = AdminLevel.SUPER, source = SourceType.BOTH)
-@CommandParameters(description = "For the bad Superadmins", usage = "/<command> <playername>")
+@CommandParameters(description = "aggelosQQ's amazing command" = "/<command> <playername>")
 public class Command_aggelos extends TFM_Command
 {
     @Override
@@ -26,16 +26,17 @@ public class Command_aggelos extends TFM_Command
     {
       playerMsg(TotalFreedomMod.MSG_NO_PERMS);
     }
-         if (args.length != 0)
+         if (args.length == 0)
          {
-             return true;
+             return false;
          }
          
          if (args.length == 1)
          
          {
-             return false;
+             return true;
          }
+ 
         final Player player = getPlayer(args[0]);
 
         if (player == null)
